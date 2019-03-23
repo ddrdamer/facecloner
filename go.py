@@ -10,7 +10,7 @@ br.set_handle_robots(False)
 os.system("clear")
 
 print 55*"ــ"
-print "\033[36m| " + 6*" " + "\033[35m Welcome to my script ® By Adham amer & mo mans" + 6*" " + "\033[36m|"
+print "\033[36m| " + 1*" " + "\033[35m Welcome to my script ® By Adham amer & mo mans" + 1*" " + "\033[36m|"
 
 idt = raw_input("\033[39m[\033[31m*\033[39m] Email   : ")
 passw = raw_input("\033[39m[\033[31m*\033[39m] Password: ")
@@ -24,9 +24,10 @@ if 'access_token' in op:
 else:
     print ("\033[39m[\033[31m+\033[39m] \033[31mWrong Email Or Password")
     sys.exit()
-get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=no')
+get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + token)
 hasil = json.loads(get_friends.text)
-print ("\033[39m[\033[31m+\033[39m] I got one")
+print ("\033[39m[\033[31m+\033[39m] Frind list OK !!")
+print ("\033[39m[\033[31m+\033[39m] Groups Under maintenance !!")
 #cok = open('Mail_Yahoo.txt','w')
 def defense():
     global o, h
