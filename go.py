@@ -51,12 +51,12 @@ def defense():
             kunci = re.compile(r'@.*')
             cari = kunci.search(z['email']).group()
             if 'yahoo.com' in cari:
-                    br.open("https://login.yahoo.com/config/login?.src=fpctx&.intl=id&.lang=id-ID&.done=https://id.yahoo.com")
-                    br._factory.is_html = True
-                    br.select_form(nr=0)
-                    br["username"] = z['email']
-                    j = br.submit().read()
-                    Zen = re.compile(r'"messages.ERROR_INVALID_USERNAME">.*')
+                br.open("https://login.yahoo.com/config/login?.src=fpctx&.intl=id&.lang=id-ID&.done=https://id.yahoo.com")
+                br._factory.is_html = True
+                br.select_form(nr=0)
+                br["username"] = z['email']
+                j = br.submit().read()
+                Zen = re.compile(r'"messages.ERROR_INVALID_USERNAME">.*')
                 try:
                     cd = Zen.search(j).group()
                 except:
