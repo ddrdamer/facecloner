@@ -43,9 +43,12 @@ def defense():
     total = len(hasil['data'])
     print "\033[32m [ " + str(total)+ " ] Friends found"
 
-    sf = input("\033[39m[\033[31m*\033[39m] Start from: ")
-    if Not sf:
+    sf = 0
+    try:
+        sf = input("\033[39m[\033[31m*\033[39m] Start from: ")
+    except:
         sf = 0
+    
     for i in range(sf, total, 1):
         wrna = "\033[36m"
         wrne = "\033[39m"
