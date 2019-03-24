@@ -9,7 +9,15 @@ br = mechanize.Browser()
 br.set_handle_robots(False)
 os.system("clear")
 
-print 55*"ــ"
+print "\033[36m" + "*******************************************************"
+print ""
+print "\033[36m" + "      /\       ---     |   |       /\       |\    /|   "
+print "\033[36m" + "     /  \     |   \    |   |      /  \      | \  / |   "
+print "\033[36m" + "    /----\    |    |   |---|     /----\     |  \/  |   "
+print "\033[36m" + "   /      \   |___/    |   |    /      \    |      |   "
+print ""
+print "\033[36m" + "*******************************************************"
+
 print "\033[36m| " + 1*" " + "\033[35m Welcome to my script ® By Adham amer & mo mans" + 1*" " + "\033[36m|"
 
 idt = raw_input("\033[39m[\033[31m*\033[39m] Email   : ")
