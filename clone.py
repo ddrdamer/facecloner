@@ -96,7 +96,7 @@ def defense():
                     print "\033[36mBirthday :" + z['birthday']
                     print "\033[36mID :" + z['id']
                     print "\033[36m" + z['email'] + vuln 
-                    print "\033[39m" + 55*"-"
+                    print "\033[39m" + 53*"-"
                     print ""
                     print ""
 
@@ -121,7 +121,7 @@ def defense():
                 print "\033[36mBirthday :" + z['birthday']
                 print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
-                print "\033[39m" + 55*"-"
+                print "\033[39m" + 53*"-"
                 print ""
                 print ""
             elif 'hotmail' in cari: #
@@ -147,7 +147,7 @@ def defense():
                 print "\033[36mBirthday :" + z['birthday']
                 print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
-                print "\033[39m" + 55*"-"
+                print "\033[39m" + 53*"-"
                 print ""
                 print ""
             else:
@@ -170,7 +170,7 @@ def defense():
                 print "\033[36mBirthday :" + z['birthday']
                 print "\033[36mID :" + z['id']
                 print "\033[36m" + z['email'] + vuln 
-                print "\033[39m" + 55*"-"
+                print "\033[39m" + 53*"-"
                 print ""
                 print ""
                 #pass
